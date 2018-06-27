@@ -22,8 +22,10 @@ namespace fs = std::experimental::filesystem;
 
 int main ( ) {
 
-    ss::print ( ss::string_split ( std::string ( "Mickey the monkey, also known as Jimi." ), "," ) ); std::cout << nl;
-    ss::print ( ss::string_split ( std::string ( "lol \"A test, just for fun\"" ), "\"", "," ) ); std::cout << nl;
+    ss::print ( ss::string_split ( std::string ( "first one,two,three" ), " ","," ) ); std::cout << nl;
+    ss::print ( ss::string_split ( std::string ( "second one,two" ), " ", "," ) ); std::cout << nl;
+    ss::print ( ss::string_split ( std::string ( "third one" ), " ", "," ) ); std::cout << nl;
+    ss::print ( ss::string_split ( std::string ( "alone" ), " ", "," ) ); std::cout << nl;
 
 	return 0;
 }
