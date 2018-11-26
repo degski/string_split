@@ -14,19 +14,21 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{97bf36e3-d662-4d3c-aa32-eb9b645d5f19}</ProjectGuid>
     <RootNamespace>string_split</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <VcpkgTriplet Condition="'$(Platform)'=='Win32'">x86-windows-static</VcpkgTriplet>
+    <VcpkgTriplet Condition="'$(Platform)'=='x64'">x64-windows-static</VcpkgTriplet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>LLVM-vs2017</PlatformToolset>
+    <PlatformToolset>LLVM-8.0.0</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>LLVM-vs2017</PlatformToolset>
+    <PlatformToolset>LLVM-8.0.0</PlatformToolset>
     <WholeProgramOptimization>
     </WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
@@ -54,7 +56,6 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <MinimalRebuild />
-      <AdditionalOptions>-Xclang -fcxx-exceptions -Xclang -std=c++2a -Xclang -pedantic -Qunused-arguments -Xclang -ffast-math -Xclang -Wno-deprecated-declarations -Xclang -Wno-unknown-pragmas -Xclang -Wno-ignored-pragmas -Xclang -Wno-unused-private-field  -mmmx  -msse  -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2  -Xclang -Wno-unused-variable -Xclang -Wno-language-extension-token -Xclang -Wno-inconsistent-dllimport %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -72,7 +73,6 @@
       <MinimalRebuild />
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalOptions>-Xclang -fcxx-exceptions -Xclang -std=c++2a -Xclang -pedantic -Qunused-arguments -Xclang -ffast-math -Xclang -Wno-deprecated-declarations -Xclang -Wno-unknown-pragmas -Xclang -Wno-ignored-pragmas -Xclang -Wno-unused-private-field  -mmmx  -msse  -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mavx -mavx2  -Xclang -Wno-unused-variable -Xclang -Wno-language-extension-token -Xclang -Wno-inconsistent-dllimport %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
