@@ -1,7 +1,7 @@
 
 // MIT License
 //
-// Copyright (c) 2018 degski
+// Copyright (c) 2018, 2019 degski
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +25,7 @@
 
 #include <iostream>
 
-// Escape sequences...
+// Escape sequences.
 
 std::ostream &  nl ( std::ostream  & out_ ) { return out_ <<  '\n'; }
 std::wostream & nl ( std::wostream & out_ ) { return out_ << L'\n'; }
@@ -51,7 +51,7 @@ std::wostream & ht ( std::wostream & out_ ) { return out_ << L'\t'; }
 std::ostream &  vt ( std::ostream  & out_ ) { return out_ <<  '\v'; }
 std::wostream & vt ( std::wostream & out_ ) { return out_ << L'\v'; }
 
-// Spaced dash...
+// Spaced dash.
 
 std::ostream &  sd ( std::ostream  & out_ ) { return out_ <<  " - "; }
 std::wostream & sd ( std::wostream & out_ ) { return out_ << L" - "; }

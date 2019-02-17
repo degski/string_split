@@ -1,7 +1,7 @@
 
 // MIT License
 //
-// Copyright (c) 2018 degski
+// Copyright (c) 2018, 2019 degski
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,7 @@
 #include <array>
 #include <filesystem>
 #include <fstream>
-#include "iostream.hpp" // <iostream> + nl, sp etc. defined...
+#include "iostream.hpp" // <iostream> + nl, sp etc. defined.
 #include <iterator>
 #include <list>
 #include <map>
@@ -35,17 +35,17 @@
 
 namespace fs = std::filesystem;
 
-#include <autotimer.hpp>
+#include <sax/autotimer.hpp>
 
 #include "string_split.hpp"
 
 
-int wmain ( ) {
+int main ( ) {
 
-    ss::print ( ss::string_split ( std::string ( "first one,two,three" ), " ","," ) ); std::cout << nl;
-    ss::print ( ss::string_split ( std::string ( "second one,two" ), " ", "," ) ); std::cout << nl;
-    ss::print ( ss::string_split ( std::string ( "third one" ), " ", "," ) ); std::cout << nl;
-    ss::print ( ss::string_split ( std::string ( "alone" ), " ", "," ) ); std::cout << nl;
+    sax::print ( sax::string_split ( std::string ( "first one,two,three" ), " ","," ) ); std::cout << nl;
+    sax::print ( sax::string_split ( std::string ( "second one,two" ), " ", "," ) ); std::cout << nl;
+    sax::print ( sax::string_split ( std::string ( "third one" ), " ", "," ) ); std::cout << nl;
+    sax::print ( sax::string_split ( std::string ( "alone" ), " ", "," ) ); std::cout << nl;
 
     return EXIT_SUCCESS;
 }
